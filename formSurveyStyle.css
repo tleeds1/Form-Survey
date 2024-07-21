@@ -1,0 +1,153 @@
+body, html {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Tahoma, sans-serif;
+    font-size: 16px;
+    color: #f5f6f7;
+}
+
+body {
+    min-height: 100vh;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('https://wallpaperaccess.com/full/2820590.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -2;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(54, 1, 63, 0.7);
+    z-index: -1;
+}
+
+h1, p {
+    margin: 1em auto;
+    text-align: center;
+}
+
+form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding: 2em 1em;
+    background-color: #1b1b32;
+}
+
+fieldset {
+    border: none;
+    padding: 2rem 2rem;
+}
+
+fieldset:last-of-type {
+    border-bottom: none;
+}
+.form-group label {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.form-group input[type="checkbox"] {
+    margin-right: 0.5em;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+}
+input, textarea {
+    background-color: #0a0a23;
+    border: 1px solid #0a0a23;
+    color: #ffffff;
+  }
+  
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+    flex-wrap: wrap;
+}
+.form-group .gender-label {
+    margin-right: 2em;
+}
+
+.form-group .gender {
+    margin-right: 1em;
+}
+.gender:first-of-type {
+    margin-left: 0;
+    width: 4em;
+}
+legend {
+    font-size: 20px;
+    color: bisque;
+}
+.inline{ 
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+
+input[type="checkbox"] {
+    background-color: #1b1b32;
+    border: 1px solid #ccc;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    margin-right: 5px;
+}
+input[type="checkbox"]:checked {
+    background-color: #f5f6f7;
+}
+.drop {
+    margin-bottom: 2em;
+    margin-top: 0;
+}
+.multi {
+    margin-bottom: 1em;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #3b3b4f;
+    border-color: white;
+    min-width: 300px;
+}
+
+input[type="submit"]:hover {
+    background-color: green;
+}
+

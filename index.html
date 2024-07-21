@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Survey FreeCodeCamp</title>
+        <link rel="stylesheet" href="formSurveyStyle.css">
+    </head>
+    <body>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">A form survey I made to get FreeCodeCamp certificate</p>
+        <form action="" id="survey-form" method="post">
+            <fieldset>
+                <legend>About you</legend>
+                <div>
+                    <label id="name-label" for="name">Your name: <input id="name" type="text" required placeholder="Ex: Tho Doan Le"></label>
+                </div>
+                <div>
+                    <label id="email-label" for="email">Your email: <input id="email" type="email" required placeholder="Ex: abc@gmail.com"></label>
+                </div>
+                <div>
+                    <label id="number-label" for="number">Your age: <input id="number" type="number" required min="3" max="120" placeholder="Ex: 18"></label>
+                </div>
+                <div class="form-group">
+                    <label class="gender-label">Your gender: </label>
+                    <label class="gender" for="male-gender"><input id="male-gender" type="radio" name="gender" class="inline" checked value="male"/> Male</label>
+                    <label class="gender" for="female-gender"><input id="female-gender" type="radio" name="gender" class="inline" value="female"/> Female</label>
+                    <label class="gender" for="other-gender"><input id="other-gender" type="radio" name="gender" class="inline" value="other"/> Other</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Your opinion </legend>
+                <label class="drop" for="dropdown">Which section you like most in the first section of Responsive Web Design Course ?
+                    <select id="dropdown" name="dropdown">
+                        <option value="">Select one</option>
+                        <option value="1">Learn HTML by Building a Cat Photo App</option>
+                        <option value="2">Learn CSS by Building a Cafe Menu</option>
+                        <option value="3">Learn CSS Colors by Building a Set of Colored Markers</option>
+                        <option value="4">Learn HTML Forms by Building a Registration Form</option>
+                    </select>
+                </label>
+                <div class="multi">What are the sections you want to apply in the future (you can choose more than one)</div>
+                <div>
+                    <label for="fe">
+                        <input class="secBox inline" id="fe" type="checkbox" required value="front-end"/> Front-end
+                    </label>
+                    <label for="be">
+                        <input class="secBox inline" id="be" type="checkbox" required value="back-end"/> Back-end
+                    </label>
+                    <label for="dsa">
+                        <input class="secBox inline" id="dsa" type="checkbox" required value="dsa"/> DataStructure and Algorithm
+                    </label>
+                    <label for="ml">
+                        <input class="secBox inline" id="ml" type="checkbox" required value="machine-learning"/> Machine learning
+                    </label>
+                    <label for="dl">
+                        <input class="secBox inline" id="dl" type="checkbox" required value="deep-learning"/> Deep learning
+                    </label>
+                    <label for="sv">
+                        <input class="secBox inline" id="sv" type="checkbox" required value="server"/> Server
+                    </label>
+                    <label for="mb">
+                        <input class="secBox inline" id="mb" type="checkbox" required value="mobile"/> Mobile App Programming
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <label for="op">Your feeling and suggestion:
+                        <textarea id="bio" name="op" rows="10" cols="30" placeholder="I like learning on FreeCodeCamp ..."></textarea>
+                    </label>
+                </legend>
+                <input id= "submit" type="submit" value="Submit" />
+            </fieldset>
+        </form>
+    </body>
+</html>
